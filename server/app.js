@@ -23,7 +23,7 @@ app.use('/api',PaymentRouter)
 app.use(express.static(path.join(__dirname,"../client/build")))
 
 app.use("*",function(req,res){
-    res.sendFile(path.join(__dirname,"../client/build"))
+    res.sendFile(path.join(__dirname,"../client/build/index.html"));
 })
 export const instance = new Razorpay({
     key_id:process.env.KEY_ID,
