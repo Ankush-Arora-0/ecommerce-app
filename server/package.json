@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev":"npm start"
+    "client":"npm start",
+    "server": "node app.js"
   },
   "keywords": [],
   "author": "",
